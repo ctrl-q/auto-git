@@ -5,7 +5,7 @@ set -o nounset
 
 cd "${AUTOGIT_REPO_ROOT}"
 
-readonly known_file_patterns="${XDG_DATA_HOME}/auto-git/known-patterns"
+readonly known_file_patterns="${XDG_CONFIG_HOME}/auto-git/known-patterns"
 
 _grep_and_succeed_when_no_matches(){
 	grep --text "$@" || [ $? = 1 ]
